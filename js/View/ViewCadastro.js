@@ -26,7 +26,7 @@ class ViewCadastro{
       ul.style.color="#ccc";
 
       let a = document.createElement("a");
-      a.setAttribute("href","../index.html");
+      a.setAttribute("href","../");
       a.innerHTML=" Login";
 
       let h3 = document.createElement("h3");
