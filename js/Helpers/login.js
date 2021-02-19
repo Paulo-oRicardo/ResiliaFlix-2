@@ -9,7 +9,7 @@ class Login{
          }
          if(inputEmail === valorEntrada.email && inputPassword === valorEntrada.password  ){
             //Mudar para home
-            window.location.href="paginaInicialHome.html";
+            window.location.href="./pages/home.html";
          }
          else{
             document.querySelector("#invalid").textContent=" Email or password is not correct"

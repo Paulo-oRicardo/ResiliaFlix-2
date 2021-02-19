@@ -24,7 +24,7 @@ class ControlerCadastro{
           erros.push("Insert the E-mail correctly");
       }
       if (document.getElementById("inputRG").value.length < 8) {
-          erros.push("Insert the RG correctly");
+          erros.push("Insert the ID correctly");
       }
       if (document.getElementById("inputCep").value.length < 8) {
           erros.push("Enter the correct zip code");

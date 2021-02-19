@@ -9,5 +9,3 @@ document.getElementById("zipcode").textContent = valor._zipcode;
 document.getElementById("city").textContent = valor._city;
 document.getElementById("neighborhood").textContent = valor._neighborhood;
 document.getElementById("street").textContent = valor._street;
-
-

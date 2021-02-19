@@ -51,7 +51,7 @@ class FilmeView {
         document.getElementById('mainInfoMovieDiv').innerHTML = `
         
             <div id="mainInfoMovie" class="w3-animate-left" >
-                <h2 id="title"> Filme não encontrado <i class="fas fa-robot"></i> </h2>
+                <h2 id="title"> Content not found <i class="fas fa-robot"></i> </h2>
             </div>
         
         `
@@ -59,7 +59,7 @@ class FilmeView {
 
             <div class="movieNotFound" > 
          
-                <h3 class="w3-animate-top" > Os termos "${nome}" não foram encontrados em nossa base de filmes  </h3>
+                <h3 class="w3-animate-top" > The words "${nome}" was not found on our movies/series database  </h3>
             </div>`
 
         

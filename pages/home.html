@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ResiliaFlix</title>
+        <link rel="icon" href="../Assets/img/mini-logo.png" type="image/x-icon">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        </style>
+
+        <link rel="icon" href="../Assets/Img/logo resiliaflixx.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="../Assets/css/reset.css">
+        <link rel="stylesheet" href="../Assets/css/header-footer.css">
+        <link rel="stylesheet" href="../Assets/css/paginaInicialHome.css">
+        <link rel="stylesheet" href="../Assets/css/carousel.css">
+
+        <script src="https://kit.fontawesome.com/6dc60f8408.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg flex-container fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="home.html"><img class="logo ms-4" src="../Assets/Img/logo.png" alt=""></a>
+                    <button class="navbar-toggler navbar-dark " id="hamburguer" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contato.html">Contact</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="myAccount.html">Account</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">My List</a>
+                                    </li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <a class="dropdown-item" href="../index.html">Sign Out</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input id="pesquisaFilme" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button id="procuraFilmeHome" class="btn" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--Carrossel-->
+        <main>
+
+            <div id="carouselExampleCaptions" class="carousel slide" data-interval="1000" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../Assets/Img/parasite.jpg" class="d-block w-100 imagem-carousel" alt="..." onclick="vaiProFilme(`parasite`)">
+                        <div class="carousel-caption d-none d-md-block alinha-legenda h-50"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Assets/Img/nasceumaestrela.jpg" class="d-block w-100 imagem-carousel " alt="..." onclick="vaiProFilme(`a star is born`)">
+                        <div class="carousel-caption d-none d-md-block alinha-legenda h-50"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Assets/Img/Soul-banner.jpg" class="d-block w-100 imagem-carousel " alt="..." onclick="vaiProFilme(`Soul`)">
+                        <div class="carousel-caption d-none d-md-block alinha-legenda h-50"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Assets/Img/bacurau.jpg" class="d-block w-100 imagem-carousel " alt="..." onclick="vaiProFilme(`bacurau`)">
+                        <div class="carousel-caption d-none d-md-block alinha-legenda h-50"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Assets/Img/Joker.jpg" class="d-block w-100 imagem-carousel3" alt="..." onclick="vaiProFilme(`joker`)">
+                        <div class="carousel-caption d-none d-md-block alinha-legenda h-50"></div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </main>
+
+        <div class="h1">
+            <h2>Highlights ResiliaFlix</h2>
+        </div>
+        <div class="divtotal">
+            <div class="div1">
+                <img class="cada-imagem" src="../Assets/Img/bacurauempe.jpeg" onclick="vaiProFilme(`bacurau`)">
+                <img class="cada-imagem" src="../Assets/Img/agarotadinamarquesa.jpeg" onclick="vaiProFilme(`the danish girl`)">
+                <img class="cada-imagem" src="../Assets/Img/nasce+uma+estrela+critica.jpeg" onclick="vaiProFilme(`a star is born`)">
+                <img class="cada-imagem" src="../Assets/Img/moolight.jpg" onclick="vaiProFilme(`moonlight`)">
+                <img class="cada-imagem" src="../Assets/Img/The_Shape_of_Water.png" onclick="vaiProFilme(`The_Shape_of_Water`)">
+                <img class="cada-imagem" src="../Assets/Img/Creed2.jpg" onclick="vaiProFilme(`Creed II`)">
+                <img class="cada-imagem" src="../Assets/Img/grassisgreener.png" onclick="vaiProFilme(`grass is greener`)">
+            </div>
+
+            <h2>Action</h2>
+            <div class="div2">
+                
+                <img class="cada-imagem" src="../Assets/Img/rocky balboa.jpg" onclick="vaiProFilme(`rocky balboa`)">
+                <img class="cada-imagem" src="../Assets/Img/theg.jpeg" onclick="vaiProFilme(`The great gatsby`)">
+                <img class="cada-imagem" src="../Assets/Img/spiderman3.jpg" onclick="vaiProFilme(`spider man 3`)">
+                <img class="cada-imagem" src="../Assets/Img/theavengers.jpg" onclick="vaiProFilme(`avengers`)">
+                <img class="cada-imagem" src="../Assets/Img/v-era-ultron.jpg" onclick="vaiProFilme(`avengers age of ultron`)">
+                <img class="cada-imagem" src="../Assets/Img/matrix.jpg" onclick="vaiProFilme(`the matrix`)">
+
+            </div>
+
+            <h2>Animations</h2>
+            <div class="div3">
+                <img class="cada-imagem" src="../Assets/Img/soul.jpg" onclick="vaiProFilme(`soul`)">
+                <img class="cada-imagem" src="../Assets/Img/caroline.jpeg" onclick="vaiProFilme(`coraline`)">
+                <img class="cada-imagem" src="../Assets/Img/divertidamente.jpg" onclick="vaiProFilme(`inside out`)">
+                <img class="cada-imagem" src="../Assets/Img/Cocofilme.png" onclick="vaiProFilme(`coco`)">
+                <img class="cada-imagem" src="../Assets/Img/tt3.jpg" onclick="vaiProFilme(`toy story 3`)">
+                <img class="cada-imagem" src="../Assets/Img/mulandesenho.jpeg" onclick="vaiProFilme(`mulan`)">
+            </div>
+
+            <h2>Classics</h2>
+            <div class="div4">
+                <img class="cada-imagem" src="../Assets/Img/mari1.jpg" onclick="vaiProFilme(`how to marry a millionaire`)">
+                <img class="cada-imagem" src="../Assets/Img/starWars.jpg" onclick="vaiProFilme(`star wars`)">
+                <img class="cada-imagem" src="../Assets/Img/the.jpg" onclick="vaiProFilme(`the godfather`)">
+                <img class="cada-imagem" src="../Assets/Img/priscila.jpg" onclick="vaiProFilme(`The Adventures of Priscilla, Queen of the Desert`)">
+                <img class="cada-imagem" src="../Assets/Img/busstop.jpg" onclick="vaiProFilme(`bus stop`)">
+                <img class="cada-imagem" src="../Assets/Img/psycho.jpg" onclick="vaiProFilme(`psycho`)">
+
+            </div>
+        </div>
+
+        <footer>
+            <div id="box1">
+
+                <div id="div-footer1">
+                    <p>Help</p>
+                    <a href="#">Suport and Help</a>
+                    <a href="#">Foruns</a>
+                    <a href="#">Github</a>
+                    <a href="#">API's: Correios API e IMDB API</a>
+                </div>
+
+                <div id="div-footer2">
+                    <p>Legal</p>
+                    <a href="#">Security</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Contact Us</a>
+                </div>
+
+            </div>
+
+            <div id="networks">
+                <p>Follow Us!</p>
+                <div id="net-icons">
+
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+
+        </footer>
+
+        <script src="../js/Helpers/user.js"></script>
+        <script src="../js/Controller/Controller.js"></script>
+        <script src="../js/Model/FilmeModel.js"></script>
+        <script src="../js/View/FilmeView.js"></script>
+        <script src="../js/Helpers/login.js"></script>
+        <script src="../js/Helpers/carousel.js"></script>
+        <script src="../js/Helpers/achaFilme.js"></script>
+        <script src="../js/Helpers/vaiProFilme.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>

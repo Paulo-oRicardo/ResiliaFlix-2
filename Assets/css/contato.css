@@ -1,5 +1,7 @@
 body{
    font-family: 'Rubik', sans-serif;
+   background-image: url(../Img/fundo_cadastro.jpg);
+   background-size: cover;
 }
 
 main{
@@ -18,12 +20,12 @@ main{
    flex-wrap: wrap;
    padding: 30px 60px;
    justify-content: space-around; 
-   background-color: rgba(126, 121, 121, 0.6);
+
 }
 
 h1{
    font-weight: 700;
-   font-size:36px;
+   font-size:50px;
    font-weight: bold;
 }
 
@@ -38,20 +40,36 @@ h1{
  }
 
  .box{
-   background-color: white;
+   background-color: rgba(0, 0, 0, 0.7);
+   color: white;
    text-align: center;
-   width: 380px;
-   height: 470px;
+   width: 340px;
+   height: 420px;
    border-radius: 10px;
    margin-bottom: 40px;
+   overflow: hidden;
+}
+
+.box:hover{
+   transition: .1s;
+   transform: scale(1.1);
 }
  
 #inst{
+   font-size: 40px;
+   color: white;
    width: 35px;
    height: 35px;
 }
+
+#inst:hover{
+   transition: .1s;
+   transform: scale(1.1);
+   color: grey;
+}
+
  .header{
-    background-color: rgba(63, 62, 62, 0.6);
+   background-color: rgba(0, 0, 0, 0.7);
      padding: 1%;
      margin-bottom: 25%;
  }
@@ -62,7 +80,7 @@ h1{
     border-radius: 50%;
     margin: 6px ;
     border: solid 4px #FFF;
-    transform: translateY(60%);
+    transform: translateY(40%);
     } 
  
  .barra{
@@ -91,13 +109,21 @@ h1{
     margin-bottom: 10px;
  }
 
+.w3-animate-top{
+   animation-duration: 1000ms;
+}
+
+.w3-animate-right{
+   animation-duration: 1000ms;
+}
+
+.w3-animate-left{
+   animation-duration: 1000ms;
+}
+
  @media screen and (max-width:440px){
    .box{
-      background-color: white;
       text-align: center;
-      width: 90%;
-      height: 470px;
-      border-radius: 10px;
-      margin-bottom: 40px;
+      width: 100%;
    }  
  }
