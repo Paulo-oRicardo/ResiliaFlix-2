@@ -35,4 +35,4 @@ document.getElementById('procuraFilme').addEventListener("click", (event) => {
 })
 
 
-//console.log("To aqui");
+FilmeController.carregaFilme(localStorage.getItem('filme'))

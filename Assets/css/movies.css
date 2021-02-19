@@ -1,78 +1,19 @@
+@keyframes scale-up-hor-left {
+    0% {
+      transform: scaleX(0.4);
+      transform-origin: 0% 0%;
+    }
+    100% {
+      transform: scaleX(1);
+      transform-origin: 0% 0%;
+    }
+  } 
+
 body{
     font-family: 'Roboto', sans-serif;
-}
-
-.flex-container {
-    font-family: 'Rubik', sans-serif;
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(126, 121, 121, 0.6);
-    font-size: 20px;
-    
-}
-
-#hamburguer{
-    border-color: white;
-    color: white;
-}
-
-.dropdown-menu{
-    border-color: white;
-    background-color: rgba(126, 121, 121, 0.6);
-}
-
-.dropdown-menu li{
-    border-color: white;
-}
-
-.flex-container a{
-    text-decoration: none;
-    color: white;
-}
-
-.flex-container a:hover{
-    font-weight: bold;
-    text-decoration: underline;
-    color: white;
-}
-
-.logo{
-    margin-top: 10px;
-    width: 150px;
-}   
-
-.nav-container{
-    display: flex;
-    justify-content: space-between;
-}
-
-#pesquisaFilme{
-    color: white;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    outline: 0;
-}
-
-#procuraFilme{
-    border: none;
-    color: #ccc;
 
 }
 
-#procuraFilme:hover{
-    background-color: white;
-    color: #0f0e35;
-
-}
-
-button{
-    background-color: #f0f4f5;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 6px;
-}
 
 main{
     margin-top: 120px;
@@ -122,8 +63,7 @@ h2, p{
     display: flex;
     text-align: left;
     justify-content: space-evenly;
-    
-    
+    padding-bottom: 20px;
 }
 
 #mainInfoMovieDiv h2{
@@ -161,6 +101,7 @@ h2, p{
     align-items: center;
     justify-content: center;
     background-color: rgba(126, 121, 121, 0.6);
+
 }
 
 #movieContent{
@@ -172,6 +113,18 @@ h2, p{
 .movieData{
     max-width: 55ch;
     height:23%;
+}
+
+.w3-animate-left{
+    animation: animateleft 3s;
+ }
+
+.w3-animate-top{
+    animation: animatetop 2s;
+ }
+
+.movieNotFound h3{
+    font-size: 30px;
 }
 
 #title{
@@ -188,7 +141,7 @@ h2, p{
     display: flex;
     justify-content: center;
     color: white;
-    height: 290px;
+    height: 380px;
     
     width: 90%;
 
@@ -212,78 +165,7 @@ footer{
 }
 
 
-#box1{
-    width: 80%;
-    display: flex;
 
-}
-
-#div-footer1{
-
-    width: 50%;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-#div-footer1 a{
-    color: white;
-    font-size: 13px;
-}
-
-#div-footer1 p{
-    font-size: 15px;
-    font-weight: bold;
-}
-
-#div-footer2{
-
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-#div-footer2 a{
-    color: white;
-    font-size: 13px;
-    
-}
-
-#div-footer2 p{
-    font-size: 15px;
-    font-weight: bold;
-}
-
-#networks{
-    width: 50%;
-
-    display: flex;
-    flex-direction: column;
-    align-items:baseline;
-
-}
-
-#networks p {
-    margin-left: 25px;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-#net-icons{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
-#networks i{
-    font-size: 40px;
-}
-
-#networks i:hover{
-    color: white;
-}
 @media(max-width: 600px){
     main{
         display: flex;
@@ -305,15 +187,8 @@ footer{
         padding: 3%;
         display: flex;
         flex-direction: column;
+   
     }
 
-    footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
-    #networks{
-        margin-top: 20px
-    }
 }

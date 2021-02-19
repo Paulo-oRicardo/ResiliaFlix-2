@@ -1,0 +1,215 @@
+.flex-container {
+   font-family: 'Rubik', sans-serif;
+   display:flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: rgba(126, 121, 121, 0.6);
+   font-size: 20px;
+   
+}
+
+#hamburguer{
+   border-color: white;
+   color: white;
+}
+
+.dropdown-menu{
+   border-color: white;
+   background-color: rgba(126, 121, 121, 0.6);
+}
+
+.dropdown-menu li{
+   border-color: white;
+}
+
+#pesquisaFilme::placeholder{
+    color: white;
+}
+
+.flex-container a{
+   text-decoration: none;
+   color: white;
+}
+
+.flex-container a:hover{
+   font-weight: bold;
+   text-decoration: underline;
+   color: white;
+}
+
+.logo{
+   margin-top: 10px;
+   width: 150px;
+}   
+
+.nav-container{
+   display: flex;
+   justify-content: space-between;
+}
+
+#pesquisaFilme{
+   color: white;
+   background-color: transparent;
+   border: none;
+   border-bottom: 1px solid #ccc;
+   outline: 0;
+}
+
+#procuraFilme{
+   border: none;
+   color: #ccc;
+
+
+}
+
+#procuraFilme:hover{
+   background-color: white;
+   color: #0f0e35;
+
+}
+
+button{
+   background-color: #f0f4f5;
+   font-size: 20px;
+   font-weight: bold;
+   border-radius: 6px;
+}
+
+.d-flex button{
+    border: none;
+}
+
+
+button:hover{
+    background-color: white;
+
+}
+
+button i{
+    color: white;
+}
+
+button i:hover{
+    color: grey;
+}
+
+
+
+
+footer{
+   bottom: 0px;
+   padding: 2%;
+   width: 100%;
+   display: flex;
+   background-color: black;
+   font-family: 'Rubik', sans-serif;
+  
+}
+
+#box1{
+   width: 80%;
+   display: flex;
+
+}
+
+#div-footer1{
+
+    width: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#div-footer1 a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+#div-footer1 a:hover{
+    text-decoration: underline;
+    
+}
+
+#div-footer1 p{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#div-footer2{
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#div-footer2 a{
+    color: white;
+    font-size: 13px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    
+}
+
+#div-footer2 p{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#div-footer2 a:hover{
+    text-decoration: underline;
+    
+}
+
+#networks{
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+
+}
+
+#networks p {
+    margin-left: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#net-icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#networks i{
+    font-size: 40px;
+}
+
+#networks i:hover{
+    color: white;
+    cursor: pointer;
+}
+
+@media(max-width: 600px){
+
+
+   footer{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+   #networks{
+       margin-top: 20px
+   }
+}

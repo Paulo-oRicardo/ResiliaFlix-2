@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/8d00c9585e.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <!--Animação--><link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="../Assets/css/reset.css">
+        <link rel="stylesheet" href="../Assets/css/header-footer.css">
+        <link rel="stylesheet" href="../Assets/css/myAccount.css">
+        <title>My Account</title>
+        <link rel="icon" href="../Assets/img/mini-logo.png" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+
+            <nav class="navbar navbar-expand-lg flex-container fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img class="logo" src="../Assets/img/logo.png" alt=""></a>
+                    <button class="navbar-toggler navbar-dark " id="hamburguer" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contato.html">Contact</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="myAccount.html">Account</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">My List</a>
+                                    </li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <a class="dropdown-item" href="../index.html">Sign Out</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input id="pesquisaFilme" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button id="procuraFilmeHome" class="btn " type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+        <main>
+            <div class="container-account">
+
+                <table class="w3-animate-top" >
+                    <tr>
+                        <td>
+                            <p id="nome"></p>
+                        </td>
+                        <td>
+                            <button>
+                                <i class="far fa-edit"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p id="email"></p>
+                        </td>
+                        <td>
+                            <button><i class="far fa-edit"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="div-id">
+                            <p id="id"></p>
+                            -
+                            <p id="digit"></p>
+                        </td>
+                        <td>
+                            <button>
+                                <i class="far fa-edit"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p id="street"></p>
+                        </td>
+                        <td>
+                            <p id="zipcode"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p id="neighborhood"></p>
+                        </td>
+                        <td>
+                            <p id="city"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="div-adress"></td>
+                            <td>
+                                <button>
+                                    <i class="far fa-edit"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </main>
+
+            <footer>
+
+                <div id="box1">
+
+                    <div id="div-footer1">
+                        <p>Help</p>
+                        <a href="#">Suport and Help</a>
+                        <a href="#">Foruns</a>
+                        <a href="#">Github</a>
+                        <a href="#">API's: Correios API e IMDB API</a>
+                    </div>
+
+                    <div id="div-footer2">
+                        <p>Legal</p>
+                        <a href="#">Security</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Cookie Policy</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+
+                </div>
+
+                <div id="networks">
+                    <p>Follow Us!</p>
+                    <div id="net-icons">
+
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+
+            </footer>
+            <script src="../js/Helpers/user.js"></script>
+            <script src="../js/Helpers/MyAccount.js"></script>
+            <script src="../js/Helpers/achaFilme.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        </body>
+    </html>

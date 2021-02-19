@@ -4,6 +4,7 @@ body{
    background-size: cover;
 
 }
+/*INICIO PAGE*/
 .imagem-responsive{
    text-align: center;
 }
@@ -34,7 +35,6 @@ body{
 }
 .input-cadastro::placeholder{
   color: #ccc;
- 
 }
 .input-cadastro:focus{
    outline: 0;
@@ -68,6 +68,8 @@ a{
    font-size:18px;
    list-style-type: none;
 }
+
+/*FOOTER*/
 footer{
 
    bottom: 0px;

@@ -24,7 +24,7 @@ class ControlerCadastro{
           erros.push("Insert the E-mail correctly");
       }
       if (document.getElementById("inputRG").value.length < 8) {
-          erros.push("Insert the RG correctly");
+          erros.push("Insert the ID correctly");
       }
       if (document.getElementById("inputCep").value.length < 8) {
           erros.push("Enter the correct zip code");
@@ -52,6 +52,19 @@ class ControlerCadastro{
          email,
          password
       }
+      const dados = {
+         _name: document.getElementById("inputName").value,
+         _email: document.getElementById("inputEmail").value,
+         _id: document.getElementById("inputRG").value,
+         _digit: document.getElementById("inputDigito").value,
+         _zipcode: document.getElementById("inputCep").value,
+         _city: document.getElementById("inputCity").value,
+         _neighborhood: document.getElementById("inputState").value,
+         _street: document.getElementById("inputAddress").value
+      }
+
+
+      localStorage.setItem("dados", JSON.stringify(dados))
       localStorage.setItem("entrar",JSON.stringify(entrada));
       localStorage.setItem("user",nome);
 
@@ -65,18 +78,18 @@ class ControlerCadastro{
     let inputPassConf = document.getElementById("inputConfirmPass");
     if(inputPass.value == inputPassConf.value){
       confirm = 1
-      inputPass.classList.remove("is-invalid")
-      inputPassConf.classList.remove("is-invalid") 
-      inputPass.classList.add("is-valid")
-      inputPassConf.classList.add("is-valid") 
+      inputPass.classList.remove("is-invalid");
+      inputPassConf.classList.remove("is-invalid");
+      inputPass.classList.add("is-valid");
+      inputPassConf.classList.add("is-valid");
 
     }
     else{
        confirm = 0
-      inputPass.classList.remove("is-valid")
-      inputPassConf.classList.remove("is-valid") 
-      inputPass.classList.add("is-invalid")
-      inputPassConf.classList.add("is-invalid")
+      inputPass.classList.remove("is-valid");
+      inputPassConf.classList.remove("is-valid"); 
+      inputPass.classList.add("is-invalid");
+      inputPassConf.classList.add("is-invalid");
     }
  })
 
@@ -92,10 +105,12 @@ class ControlerCadastro{
    ControlerCadastro.guardar();
       //Confere erros 
    if(ControlerCadastro.confereErro())
-   ControlerCadastro.confereErro();
+      ControlerCadastro.confereErro();
    else
-   ViewCadastro.deuCerto(`Congratulations your registration was successful, now I log in`);
+      ViewCadastro.deuCerto(`Congratulations your registration was successful, now I log in`);
  }) 
+
+
 
 
 

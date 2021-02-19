@@ -22,19 +22,19 @@ class ViewCadastro{
     static deuCerto(mensage){
       let ul = document.getElementById("mensagens-erro");
       ul.innerHTML = " ";
-      ul.style.backgroundColor="transparent"
+      ul.style.backgroundColor="transparent";
       ul.style.color="#ccc";
 
       let a = document.createElement("a");
-      a.setAttribute("href","login.html")
-      a.innerHTML=" Login"
+      a.setAttribute("href","../index.html");
+      a.innerHTML=" Login";
 
       let h3 = document.createElement("h3");
       h3.innerHTML = document.querySelector("#inputName").value;
       
           let li = document.createElement("li");
           li.innerHTML = mensage;
-          ul.appendChild(h3)
+          ul.appendChild(h3);
           ul.appendChild(li);
           li.appendChild(a);
       
@@ -42,7 +42,7 @@ class ViewCadastro{
       form.style.display="none";
       
       let footer = document.getElementById("footer");
-      footer.style.position="absolute"
+      footer.style.position="absolute";
    }
 
 }
