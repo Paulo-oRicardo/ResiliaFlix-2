@@ -1,4 +1,4 @@
-# 💻 Desafio Front-end ResiliaFlix V2.0 
+# 💻 Desafio Front-end ResiliaFlix 2.0 
 
 # 🗒️ Pré Requisitos: 
 
